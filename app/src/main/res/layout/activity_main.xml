@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/txtValor1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Valor 1"
@@ -15,6 +16,100 @@
         android:layout_centerHorizontal="true"
         android:textSize="18dp"/>
 
+    <EditText
+        android:id="@+id/valor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_alignTop="@+id/txtValor1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/txtValor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor 2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"/>
+
+    <EditText
+        android:id="@+id/valor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_alignTop="@+id/txtValor2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:onClick="add"/>
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnAdd"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="-106dp"
+        android:layout_centerVertical="true"
+        android:onClick="sub"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btnX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnSub"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="-106dp"
+        android:text="*"
+        android:onClick="vezes"/>
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnX"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="-106dp"
+        android:text="/"
+        android:onClick="div"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:textSize="18dp"
+        android:text="O resutado é: " />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginRight="-56dp"
+        android:textSize="18dp"
+        android:text="" />
 
 
 </RelativeLayout>
